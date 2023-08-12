@@ -12,6 +12,8 @@ import { FaGripHorizontal } from 'react-icons/fa';
 import { AiFillApi } from 'react-icons/ai';
 import { AiOutlineMobile } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
+import { GrMail } from 'react-icons/gr';
 
 
 function App() {
@@ -28,20 +30,20 @@ function App() {
   return (
     <div className=" w-full max-w-screen-xl mx-auto relative" >
 
+      <div className='flex flex-col justify-center items-center w-full h-full ' >
+        <div className=' flex flex-col justify-start items-center h-80 w-11/12' >
+          <div className="flex w-80 h-full mt-10 justify-end items-start " >
+            <img src="/hiemojiapple.png" alt="apple hi emoji" className=" h-80 w-80 " />
+          </div>
+        </div>
 
-      <div className=' flex flex-col justify-start items-center h-80 w-11/12' >
-        <div className="flex w-80 h-full mt-10 justify-end items-start " >
-          <img src="/hiemojiapple.png" alt="apple hi emoji" className=" h-80 w-80 " />
+
+        <div className="flex flex-col gap-2 w-11/12 h-full justify-center items-start p-3 mt-6 ">
+          <p className="text-black font-medium w-full text-center " > Hello, my name is</p>
+          <h1 className='text-blue-700 font-extrabold text-6xl w-full text-center' >VINICIUS NOGUEIRA</h1>
+          <p className="text-black font-medium w-full text-center" > Building & maintaining connections with persons and softwares 👨🏻‍💻</p>
         </div>
       </div>
-
-
-      <div className="flex flex-col gap-2 w-11/12 h-full justify-center items-start p-3 mt-6 ">
-        <p className="text-black font-medium w-full text-center " > Hello, my name is</p>
-        <h1 className='text-blue-700 font-extrabold text-6xl w-full text-center' >VINICIUS NOGUEIRA</h1>
-        <p className="text-black font-medium w-full text-center" > Building & maintaining connections with persons and softwares 👨🏻‍💻</p>
-      </div>
-
 
       <div className="flex flex-row h-auto w-full justify-center items-center mt-10 " >
         <div className="sm:flex hidden  w-72 h-full justify-end items-end " >
@@ -210,7 +212,24 @@ function App() {
               <a href='https://25-now.vercel.app/' className='text-2xl px-4 text-slate-700 font-bold flex md:justify-end'>25NOW</a>
               <div className='md:bg-blue-500 md:my-5 text-slate-700 md:text-white p-4 rounded md:shadow-lg' >
                 <p className='pb-4'>This React application is a dynamic platform that utilizes the TMDB API to fetch and display detailed information about movies and TV shows. This application provides users with an engaging interface to explore and discover their favorite films and television series. Users can search for specific movies or TV shows using the search filters, enabling them to find content based on criteria such as title, release date and ratings.</p>
-                <p>One of the standout features of the application is the ability to play trailers. Users can watch trailers of movies and TV shows directly within the application.</p>
+                <p className='pb-4'>One of the standout features of the application is the ability to play trailers. Users can watch trailers of movies and TV shows directly within the application.</p>
+                <div className='pb-4'>
+                  <h3 className='text-lg font-semibold'>Demo Accounts</h3>
+                  <ul>
+                    <li>
+                      <span className='font-mediun'>Email: test2@test.com</span>
+                      <span className='font-mediun'>Pass: test123</span>
+                    </li>
+                    <li>
+                      <span className='font-mediun'>Email: test3@test.com</span>
+                      <span className='font-mediun'>Pass: test123</span>
+                    </li>
+                  </ul>
+                </div>
+                <p>
+                  <span className=' font-extrabold text-lg md:text-yellow-300 text-blue-500'>Note:</span>
+                  The Back-End of this application is hosted on a free server, it takes about 20 seconds to respond to initial request.
+                </p>
               </div>
               <div className='flex flex-wrap md:justify-end text-xs rounded text-slate-600 gap-x-8 gap-y-4 font-roboto px-4' >
                 <span>React</span>
@@ -289,10 +308,12 @@ function App() {
           <p className='text-center lg:w-1/2 mb-8 text-slate-700'>I'm currently looking for opportunities. Whether its a Full-Time Job or a Freelance work. Send me a message, I'll try to get back to you as soon as possible.</p>
         </div>
         <div className='flex gap-y-4 gap-x-8 flex-wrap justify-center' >
-          <a className='flex items-center gap-2 border border-blue-300 text-sm sm:text-base px-6 py-2.5 sm:px-10 sm:py-4 font-roboto rounded hover:shadow-lg hover:shadow-blue-200 transition-all hover:-translate-y-1' >
+          <a href='mailto:vns5218@icloud.com' className='flex items-center gap-2 border border-blue-300 text-sm sm:text-base px-6 py-2.5 sm:px-10 sm:py-4 font-roboto rounded hover:shadow-lg hover:shadow-blue-200 transition-all hover:-translate-y-1' >
+            < GrMail className='w-6 h-6' />
             Say Hello
           </a>
-          <a className='flex items-center gap-2 border border-blue-300 text-sm sm:text-base px-6 py-2.5 sm:px-10 sm:py-4 font-roboto rounded hover:shadow-lg hover:shadow-blue-200 transition-all hover:-translate-y-1' >
+          <a href='https://wa.me/+33788614862' className='flex items-center gap-2 border border-blue-300 text-sm sm:text-base px-6 py-2.5 sm:px-10 sm:py-4 font-roboto rounded hover:shadow-lg hover:shadow-blue-200 transition-all hover:-translate-y-1' >
+            < FaWhatsapp className='w-6 h-6' />
             Say Hello
           </a>
 
