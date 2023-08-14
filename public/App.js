@@ -62,9 +62,10 @@ function App() {
             <h1 className="sm:text-3xl text-xl font-extrabold text-slate-800 font-inter ">About Me</h1>
             <div className=" h-px sm:w-64 w-32 flex-grow max-w-xs bg-blue-100"></div>
           </div>
-          <p className="font-light  text-slate-600 w-full text-justify " >I am a passionate and skilled Software Developer with a strong dedication and attention to detail. I possess a diverse skill set that allows me to handle both the frontend and backend aspects of web development.</p>
-          <p className='font-light text-slate-600 w-full text-justify'>I stay updated with the latest industry trends and best practices by attending conferences, taking online courses, and experimenting with new technologies. Proficient in JavaScript, Typescript, React, Redux, Next.js, Node.js, Express, MySql and MongoDB.</p>
-          <p className='font-light text-slate-600 w-full text-justify' >I`m pursuing a software engineering specialisation at UFMG where I am developing skills in software architecture, design patterns, testing, and TDD. I'm a self driven problem solver and a good team player with a passion for climbing, guitar and the Netherlands culture.</p>
+          <p className="font-light  text-slate-600 w-full text-justify " > Currently transitioning my career to become a Front-end Developer. Proficient in JavaScript, Typescript, React, Redux, Next.js, Node.js, Express, MySql and MongoDB.
+            I`m pursuing a software engineering specialisation at UFMG where I am developing skills in software architecture, design patterns, testing, and TDD.
+            I'm a self driven problem solver and a good team player with a passion for climbing 🧗, guitar🎸and the Netherlands culture 🇳🇱.
+          </p>
         </div>
       </div>
 
@@ -216,17 +217,18 @@ function App() {
               <h4 className='font-roboto text-xs pb-1 text-blue-700 px-4 md:text-end'>Featured Project</h4>
               <a href='https://25-now.vercel.app/' className='text-2xl px-4 text-slate-700 font-bold flex md:justify-end'>25NOW</a>
               <div className='md:bg-blue-700 md:my-5 text-slate-700 md:text-white p-4 rounded md:shadow-lg' >
-                <p className='pb-4'>25NOW is a dynamic and user-friendly React application that combines the functionalities of a to-do list with a Pomodoro clock. The application empowers users to efficiently manage their tasks while adhering to the Pomodoro technique for enhanced productivity. Users can create lists, add, edit, and delete items, archive completed tasks, and mark tasks as done. The application provides a comprehensive overview of completed tasks, categorized by date, enabling users to track their achievements effectively.</p>
+                <p className='pb-4'>This React application is a dynamic platform that utilizes the TMDB API to fetch and display detailed information about movies and TV shows. This application provides users with an engaging interface to explore and discover their favorite films and television series. Users can search for specific movies or TV shows using the search filters, enabling them to find content based on criteria such as title, release date and ratings.</p>
+                <p className='pb-4'>One of the standout features of the application is the ability to play trailers. Users can watch trailers of movies and TV shows directly within the application.</p>
                 <div className='pb-4'>
                   <h3 className='text-lg font-semibold'>Demo Accounts</h3>
                   <ul>
                     <li>
-                      <span className='font-mediun'>User: test1</span>
-                      <span className='font-mediun pl-2'>Pass: test123</span>
+                      <span className='font-mediun'>Email: test2@test.com</span>
+                      <span className='font-mediun'>Pass: test123</span>
                     </li>
                     <li>
-                      <span className='font-mediun'>User: test2</span>
-                      <span className='font-mediun pl-2'>Pass: test123</span>
+                      <span className='font-mediun'>Email: test3@test.com</span>
+                      <span className='font-mediun'>Pass: test123</span>
                     </li>
                   </ul>
                 </div>
@@ -258,17 +260,17 @@ function App() {
               <h4 className='font-roboto text-xs pb-1 text-blue-700 px-4'>Featured Project</h4>
               <a href='https://dutchway.vercel.app/' className='text-2xl px-4 text-slate-700 font-bold'>Dutch Way</a>
               <div className='md:bg-blue-700 md:my-5 text-slate-700 md:text-white p-4 rounded md:shadow-lg'>
-                <p className='pb-4'>Dutch Way is a comprehensive React/TypeScript application designed to facilitate the learning of the Dutch language through interactive quizzes, lessons, videos, and text materials. The application encompasses four main sections, each catering to a specific aspect of language learning: Grammar, Lessons, Dictionary, and Material. Dutch Way empowers users to grasp the intricacies of the Dutch language through structured lessons and engaging learning materials.</p>
+                <p className='pb-4'>This application provides a feature-rich communication platform where users can register, invite friends, and engage in text chat, video chat, and group video chat. It combines a user-friendly interface, Real-time communication technologies, and robust backend functionality to create an immersive and interactive experience.</p>
                 <div className='pb-4'>
                   <h3 className='text-lg font-semibold'>Demo Accounts</h3>
                   <ul>
                     <li>
-                      <span className='font-mediun'>Email: test1@test.com</span>
-                      <span className='font-mediun pl-2'>Pass: test123</span>
+                      <span className='font-mediun'>Email: test2@test.com</span>
+                      <span className='font-mediun'>Pass: test123</span>
                     </li>
                     <li>
-                      <span className='font-mediun'>Email: test2@test.com</span>
-                      <span className='font-mediun pl-2 '>Pass: test123</span>
+                      <span className='font-mediun'>Email: test3@test.com</span>
+                      <span className='font-mediun'>Pass: test123</span>
                     </li>
                   </ul>
                 </div>
@@ -304,7 +306,7 @@ function App() {
       </div>
 
 
-      <div className='px-5 xs:px-10 ms:px-12 md:px-24 pt-16 pb-40' style={{ opacity: 1, transform: 'none' }} >
+      <div className='px-5 xs:px-10 ms:px-12 md:px-24 pt-24 pb-48' style={{ opacity: 1, transform: 'none' }} >
         <div className='flex flex-col justify-center items-center' >
           <h2 className='text-5xl font-extrabold mb-5'>Get In Touch</h2>
           <p className='text-center lg:w-1/2 mb-8 text-slate-700'>I'm currently looking for opportunities. Whether its a Full-Time Job or a Freelance work. Send me a message, I'll try to get back to you as soon as possible.</p>
@@ -322,12 +324,9 @@ function App() {
         </div>
       </div>
 
-      <div className='px-5 xs:px-10 ms:px-12 md:px-24 pb-4' >
-        <div className='flex flex-row justify-center items-end gap-6'>
-          <a href='https://github.com/iroac' > <img src='./github-light.svg' className=' w-6 h-6 hover:w-7 hover:h-7 cursor-pointer ' alt='github logo' /> </a>
-          <a href='https://www.linkedin.com/in/iamviniciusnogueira/' > <img src='./linkedin-light.svg' className=' w-6 h-6 hover:w-7 hover:h-7 cursor-pointer ' alt='linkedin logo' /> </a>
-          <a href='https://www.instagram.com/euroacu/' > <img src='./instagram-light.svg' className=' w-6 h-6 hover:w-7 hover:h-7 cursor-pointer ' alt='instagram logo' /> </a>
-          <a href='https://twitter.com/iroacode' > <img src='./twitter-light.svg' className=' w-6 h-6 hover:w-7 hover:h-7 cursor-pointer ' alt='twitter logo' /> </a>
+      <div className='px-5 xs:px-10 ms:px-12 md:px-24 pt-24 pb-4' >
+        <div className='flex flex-row justify-center items-end'>
+          <a> <img src='./github-light.svg' /> </a>
         </div>
       </div>
 
