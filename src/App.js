@@ -73,9 +73,9 @@ function App() {
 
 
         <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'}`}>
-          <Link to='about' smooth={true} className='hover:text-black text-blue-700 font-medium block py-2 px-4 font-roboto ' href='#about' style={{ opacity: 1, transform: 'none' }}>About</Link>
-          <Link to='projects' smooth={true} className='hover:text-black text-blue-700 font-medium block py-2 px-4 font-roboto ' href='#projects' style={{ opacity: 1, transform: 'none' }}>Projects</Link>
-          <Link to='contact' smooth={true} className='hover:text-black text-blue-700 font-medium block py-2 px-4 font-roboto ' href='#contact' style={{ opacity: 1, transform: 'none' }}>Contact</Link>
+          <Link to='about' smooth={true} onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className='hover:text-black text-blue-700 font-medium block py-2 px-4 font-roboto ' href='#about' style={{ opacity: 1, transform: 'none' }}>About</Link>
+          <Link to='projects' smooth={true} onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className='hover:text-black text-blue-700 font-medium block py-2 px-4 font-roboto ' href='#projects' style={{ opacity: 1, transform: 'none' }}>Projects</Link>
+          <Link to='contact' smooth={true} onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className='hover:text-black text-blue-700 font-medium block py-2 px-4 font-roboto ' href='#contact' style={{ opacity: 1, transform: 'none' }}>Contact</Link>
         </div>
 
 
@@ -83,13 +83,13 @@ function App() {
 
       <div className='flex flex-col justify-center items-center w-full h-full ' >
         <div className=' flex flex-col justify-start items-center h-80 w-11/12' >
-          <div className="flex w-80 h-full mt-10 justify-end items-start " >
+          <div className="flex w-80 h-full mt-14 justify-end items-start " >
             <img src="/hiemojiapple.png" alt="apple hi emoji" className=" h-80 w-80 " />
           </div>
         </div>
 
 
-        <div className="flex flex-col gap-2 w-11/12 h-full justify-center items-start p-3 mt-6 ">
+        <div className="flex flex-col gap-2 w-11/12 h-full justify-center items-start p-3 mt-10 ">
           <p className="text-black font-medium w-full text-center " > Hello, my name is</p>
           <h1 className='text-blue-700 font-extrabold text-6xl w-full text-center' >VINICIUS NOGUEIRA</h1>
           <p className="text-black font-medium w-full text-center" > Building & maintaining connections with persons and softwares 👨🏻‍💻</p>
@@ -240,7 +240,7 @@ function App() {
       </div>
 
       <div className=' px-5 xs:px-10 sm:px-12 md:px-24 py-24'>
-        <div id='projects' className="flex items-center gap-3 pb-10 pt-2.5 ">
+        <div id='projects' className="flex items-center gap-3 pt-10 pb-10 ">
           <h1 className="text-3xl font-extrabold text-slate-800 font-inter ">Something that I build</h1>
           <div className=" h-px sm:w-64 w-32 flex-grow max-w-xs bg-blue-100"></div>
         </div>
@@ -298,7 +298,7 @@ function App() {
           </div>
 
 
-          <div className='flex flex-col-reverse md:flex-row items-center md:gap-3 mb-20 relative shadow-lg border md:border-none md:shadow-none rounded overflow-hidden md:overflow-visible' style={{ opacity: 1, transform: 'none' }} >
+          <div className='flex flex-col-reverse md:flex-row items-center md:gap-3 mb-6 md:mb-20 relative shadow-lg border md:border-none md:shadow-none rounded overflow-hidden md:overflow-visible' style={{ opacity: 1, transform: 'none' }} >
             <div className='w-full md:w-2/3 lg:w-1/2 z-10 bg-slate-50  md:bg-transparent py-5 md:mt-5' >
               <h4 className='font-roboto text-xs pb-1 text-blue-700 px-4'>Featured Project</h4>
               <a href='https://dutchway.vercel.app/' className='text-2xl px-4 text-slate-700 font-bold'>Dutch Way</a>
