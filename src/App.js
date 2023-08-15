@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
 import { TbMessages } from 'react-icons/tb';
 import { MdGroups } from 'react-icons/md';
 import { BsArrowLeftRight } from 'react-icons/bs';
@@ -53,12 +54,12 @@ function App() {
           <a href='/'> <img className='w-14 h-14 object-cover' alt='logo vinicius' src='/logoviniciusnogueira.png' /> </a>
 
           <div className={`hidden md:flex md:text-sm md:font-roboto md:gap-10 ${mobileMenuOpen ? 'block' : 'hidden'}`} >
-            <a className='hover:text-black text-blue-700 font-medium font-roboto ' href='#about' style={{ opacity: 1, transform: 'none' }}>About</a>
-            <a className='hover:text-black text-blue-700 font-medium font-roboto ' href='#projects' style={{ opacity: 1, transform: 'none' }}>Projects</a>
-            <a className='hover:text-black text-blue-700 font-medium font-roboto ' href='#contact' style={{ opacity: 1, transform: 'none' }}>Contact</a>
+            <Link to='about' smooth={true} className='hover:text-black text-blue-700 font-medium font-roboto ' href='#about' style={{ opacity: 1, transform: 'none' }}>About</Link>
+            <Link to='projects' smooth={true} className='hover:text-black text-blue-700 font-medium font-roboto ' href='#projects' style={{ opacity: 1, transform: 'none' }}>Projects</Link>
+            <Link to='contact' smooth={true} className='hover:text-black text-blue-700 font-medium font-roboto ' href='#contact' style={{ opacity: 1, transform: 'none' }}>Contact</Link>
           </div>
 
-          {/* Mobile menu button */}
+
           <button className='md:hidden' onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             <svg className='w-6 h-6 text-blue-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
               {mobileMenuOpen ? (
@@ -70,11 +71,11 @@ function App() {
           </button>
         </div>
 
-        {/* Mobile menu items */}
+
         <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'}`}>
-          <a className='block py-2 px-4 text-blue-700 font-medium font-roboto hover:text-black' href='#about'>About</a>
-          <a className='block py-2 px-4 text-blue-700 font-medium font-roboto hover:text-black' href='#projects'>Projects</a>
-          <a className='block py-2 px-4 text-blue-700 font-medium font-roboto hover:text-black' href='#contact'>Contact</a>
+          <Link to='about' smooth={true} className='hover:text-black text-blue-700 font-medium block py-2 px-4 font-roboto ' href='#about' style={{ opacity: 1, transform: 'none' }}>About</Link>
+          <Link to='projects' smooth={true} className='hover:text-black text-blue-700 font-medium block py-2 px-4 font-roboto ' href='#projects' style={{ opacity: 1, transform: 'none' }}>Projects</Link>
+          <Link to='contact' smooth={true} className='hover:text-black text-blue-700 font-medium block py-2 px-4 font-roboto ' href='#contact' style={{ opacity: 1, transform: 'none' }}>Contact</Link>
         </div>
 
 
@@ -102,7 +103,7 @@ function App() {
 
 
         <div className="flex flex-col gap-2 w-8/12 h-full justify-center items-start p-3 pt-16 ">
-          <div className="flex items-center pb-1 gap-3 ">
+          <div id='about' className="flex items-center pb-1 gap-3 ">
             <h1 className="sm:text-3xl text-xl font-extrabold text-slate-800 font-inter ">About Me</h1>
             <div className=" h-px sm:w-64 w-32 flex-grow max-w-xs bg-blue-100"></div>
           </div>
@@ -239,7 +240,7 @@ function App() {
       </div>
 
       <div className=' px-5 xs:px-10 sm:px-12 md:px-24 py-24'>
-        <div className="flex items-center gap-3 pb-10 pt-2.5 ">
+        <div id='projects' className="flex items-center gap-3 pb-10 pt-2.5 ">
           <h1 className="text-3xl font-extrabold text-slate-800 font-inter ">Something that I build</h1>
           <div className=" h-px sm:w-64 w-32 flex-grow max-w-xs bg-blue-100"></div>
         </div>
@@ -348,7 +349,7 @@ function App() {
       </div>
 
 
-      <div className='px-5 xs:px-10 ms:px-12 md:px-24 pt-16 pb-40' style={{ opacity: 1, transform: 'none' }} >
+      <div id='contact' className='px-5 xs:px-10 ms:px-12 md:px-24 pt-16 pb-40' style={{ opacity: 1, transform: 'none' }} >
         <div className='flex flex-col justify-center items-center' >
           <h2 className='text-5xl font-extrabold mb-5'>Get In Touch</h2>
           <p className='text-center lg:w-1/2 mb-8 text-slate-700'>I'm currently looking for opportunities. Whether its a Full-Time Job or a Freelance work. Send me a message, I'll try to get back to you as soon as possible.</p>
