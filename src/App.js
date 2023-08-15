@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import { TbMessages } from 'react-icons/tb';
 import { MdGroups } from 'react-icons/md';
 import { BsArrowLeftRight } from 'react-icons/bs';
@@ -17,24 +17,68 @@ import { GrMail } from 'react-icons/gr';
 
 
 function App() {
-  const [isSoftSkills, updateSoftSkiils] = useState(false);
+  const [isSoftSkills, updateSoftSkills] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // New state for mobile menu
 
   const handleSoftSkillsButton = () => {
-    updateSoftSkiils(true)
-  }
+    updateSoftSkills(true);
+  };
 
   const handleCodeSkillsButton = () => {
-    updateSoftSkiils(false)
-  }
+    updateSoftSkills(false);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
 
   return (
     <div className=" w-full max-w-screen-xl mx-auto relative" >
 
-      {/* <nav className=' w-full fixed left-0 top-0 z-20 backdrop-blur-sm bg-white bg-opacity-90 transition-all duration-300 translate-y-0  shadow-lg ' >
-        <div className='flex w-full max-w-screen-xl mx-auto h-16 justify-between items-center px-5 md:px-24' >
+      <nav className={`w-full fixed left-0 top-0 z-20 backdrop-blur-sm bg-white bg-opacity-90 transition-all duration-300 translate-y-0 ${prevScrollPos === 0 ? '' : 'shadow-lg'} ${visible ? '' : 'translate-y-[-100%]'}`}>
+        <div className='flex w-full max-w-screen-xl mx-auto h-16 justify-between items-center px-5 md:px-24'>
+          <a href='/'> <img className='w-14 h-14 object-cover' alt='logo vinicius' src='/logoviniciusnogueira.png' /> </a>
 
+          <div className={`hidden md:flex md:text-sm md:font-roboto md:gap-10 ${mobileMenuOpen ? 'block' : 'hidden'}`} >
+            <a className='hover:text-black text-blue-700 font-medium font-roboto ' href='#about' style={{ opacity: 1, transform: 'none' }}>About</a>
+            <a className='hover:text-black text-blue-700 font-medium font-roboto ' href='#projects' style={{ opacity: 1, transform: 'none' }}>Projects</a>
+            <a className='hover:text-black text-blue-700 font-medium font-roboto ' href='#contact' style={{ opacity: 1, transform: 'none' }}>Contact</a>
+          </div>
+
+          {/* Mobile menu button */}
+          <button className='md:hidden' onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            <svg className='w-6 h-6 text-blue-700' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              {mobileMenuOpen ? (
+                <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M6 18L18 6M6 6l12 12' />
+              ) : (
+                <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M4 6h16M4 12h16m-7 6h7' />
+              )}
+            </svg>
+          </button>
         </div>
-      </nav> */}
+
+        {/* Mobile menu items */}
+        <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'}`}>
+          <a className='block py-2 px-4 text-blue-700 font-medium font-roboto hover:text-black' href='#about'>About</a>
+          <a className='block py-2 px-4 text-blue-700 font-medium font-roboto hover:text-black' href='#projects'>Projects</a>
+          <a className='block py-2 px-4 text-blue-700 font-medium font-roboto hover:text-black' href='#contact'>Contact</a>
+        </div>
+
+
+      </nav>
 
       <div className='flex flex-col justify-center items-center w-full h-full ' >
         <div className=' flex flex-col justify-start items-center h-80 w-11/12' >
