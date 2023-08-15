@@ -1,19 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import { BsClockFill, BsArrowLeftRight, BsCodeSlash, BsFillDatabaseFill } from 'react-icons/bs';
+import { FaServer, FaGripHorizontal, FaWhatsapp, FaRegLightbulb, FaPuzzlePiece } from 'react-icons/fa';
 import { TbMessages } from 'react-icons/tb';
 import { MdGroups } from 'react-icons/md';
-import { BsArrowLeftRight } from 'react-icons/bs';
-import { BsClockFill } from 'react-icons/bs';
-import { FaPuzzlePiece } from 'react-icons/fa';
-import { FaRegLightbulb } from 'react-icons/fa';
 import { PiCursorFill } from 'react-icons/pi';
-import { BsCodeSlash } from 'react-icons/bs';
-import { FaServer } from 'react-icons/fa';
-import { FaGripHorizontal } from 'react-icons/fa';
 import { AiFillApi } from 'react-icons/ai';
-import { BsFillDatabaseFill } from 'react-icons/bs';
 import { FiExternalLink } from 'react-icons/fi';
-import { FaWhatsapp } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
 
 
