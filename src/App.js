@@ -120,8 +120,8 @@ function App() {
         <div className="flex rounded-full justify-center items-center w-20 h-20 bg-slate-50 p-4  shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:shadow-blue-300 transition-all"><img src="/githublogo.png" alt="github logo" className=" w-10 h-10 sm:w-12 sm:h-12 " /></div>
       </div>
 
-      <div className='flex flex-col justify-center items-center' >
-        <div className="flex flex-row mt-20 mb-6 gap-4" >
+      <div className='flex flex-col justify-center items-center pt-28 ' >
+        <div className="flex flex-row mb-6 gap-4" >
           <button onClick={handleCodeSkillsButton} className="flex items-center gap-2 border border-blue-300 text-sm sm:text-base px-6 py-2.5 sm:px-10 sm:py-4 font-roboto rounded hover:shadow-lg hover:shadow-blue-200 transition-all hover:-translate-y-1" >Coding Skills</button>
           <button onClick={handleSoftSkillsButton} className="flex items-center gap-2 border border-blue-300 text-sm sm:text-base px-6 py-2.5 sm:px-10 sm:py-4 font-roboto rounded hover:shadow-lg hover:shadow-blue-200 transition-all hover:-translate-y-1" >Soft Skills</button>
         </div>
@@ -233,7 +233,7 @@ function App() {
       </div>
 
       <div className=' px-5 xs:px-10 sm:px-12 md:px-24 py-24'>
-        <div id='projects' className="flex items-center gap-3 pt-20 pb-10 ">
+        <div id='projects' className="flex items-center gap-3 pt-28 sm:pt-10 pb-10 ">
           <h1 className="text-3xl font-extrabold text-slate-800 font-inter ">Something that I build</h1>
           <div className=" h-px sm:w-64 w-32 flex-grow max-w-xs bg-blue-100"></div>
         </div>
