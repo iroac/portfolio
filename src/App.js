@@ -83,9 +83,9 @@ function App() {
 
 
         <div className="flex flex-col gap-2 w-11/12 h-full justify-center items-start p-3 mt-10 ">
-          <p className="text-black font-medium w-full text-center " > Hello, my name is</p>
+          <p className="text-black font-medium w-full text-center " >Hello, my name is</p>
           <h1 className='text-blue-700 font-extrabold text-6xl w-full text-center' >VINICIUS NOGUEIRA</h1>
-          <p className="text-black font-medium w-full text-center" > Building & maintaining connections with persons and softwares 👨🏻‍💻</p>
+          <p className="text-black font-medium w-full text-center" >Building & maintaining connections with people and software 👨🏻‍💻</p>
         </div>
       </div>
 
