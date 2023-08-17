@@ -83,7 +83,7 @@ function App() {
 
 
         <div className="flex flex-col gap-2 w-11/12 h-full justify-center items-start p-3 mt-10 ">
-          <p className="text-black font-medium w-full text-center " >Hello, my name is</p>
+          <p className="text-black font-medium w-full text-center " >Hello there, my name is</p>
           <h1 className='text-blue-700 font-extrabold text-6xl w-full text-center' >VINICIUS NOGUEIRA</h1>
           <p className="text-black font-medium w-full text-center" >Building & maintaining connections with people and software 👨🏻‍💻</p>
         </div>
@@ -100,9 +100,9 @@ function App() {
             <h1 className="sm:text-3xl text-xl font-extrabold text-slate-800 font-inter ">About Me</h1>
             <div className=" h-px sm:w-64 w-32 flex-grow max-w-xs bg-blue-100"></div>
           </div>
-          <p className="font-light  text-slate-600 w-full text-justify " >I am a passionate and skilled Software Developer with a strong dedication and attention to detail. I possess a diverse skill set that allows me to handle both the frontend and backend aspects of web development.</p>
-          <p className='font-light text-slate-600 w-full text-justify'>I stay updated with the latest industry trends and best practices by attending conferences, taking online courses, and experimenting with new technologies. Proficient in JavaScript, Typescript, React, Redux, Next.js, Node.js, Express, MySql and MongoDB.</p>
-          <p className='font-light text-slate-600 w-full text-justify' >I`m pursuing a software engineering specialisation at UFMG where I am developing skills in software architecture, design patterns, testing, and TDD. I'm a self driven problem solver and a good team player with a passion for climbing, guitar and the Netherlands culture.</p>
+          <p className="font-light  text-slate-600 w-full text-justify " >I am a <span className='text-blue-700 font-bold ' >passionate</span> and skilled Software Developer with a strong dedication and attention to detail. I possess a diverse skill set that allows me to handle  <span className='text-blue-700 font-bold ' >both</span>  the <span className='text-blue-700 font-bold' >frontend and backend</span>  aspects of web development.</p>
+          <p className='font-light text-slate-600 w-full text-justify'>I stay updated with the latest industry <span className='text-blue-700 font-bold ' >trends</span> and <span className='text-blue-700 font-bold ' >best practices</span> by attending conferences, taking online courses, and experimenting with new technologies. Proficient in <span className='text-black font-semibold' >JavaScript, Typescript, React, Redux, Next.js, Node.js, Express, MySql and MongoDB</span>.</p>
+          <p className='font-light text-slate-600 w-full text-justify' >I`m pursuing a software engineering specialisation at UFMG where I am developing skills in <span className='text-blue-700 font-bold ' >software architecture</span>, <span className='text-blue-700 font-bold ' >design patterns</span>, <span className='text-blue-700 font-bold ' >testing</span>, and <span className='text-blue-700 font-bold ' >TDD</span>. I'm a self driven problem solver and a good team player with a passion for climbing, guitar and the Netherlands culture.</p>
         </div>
       </div>
 
