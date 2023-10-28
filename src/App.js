@@ -91,7 +91,7 @@ function App() {
 
       <div className="flex flex-row h-auto w-full justify-center items-center mt-10 " >
         <div className="sm:flex hidden  w-72 h-full justify-end items-end " >
-          <img src="/pcemojiapple.png" alt="pc emoji" className=" h-72 w-72 mb-3 " />
+          <img src="/parisWithBorder.png" alt="pc emoji" className=" h-72 w-72 mt-6" />
         </div>
 
 
